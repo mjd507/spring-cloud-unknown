@@ -38,8 +38,9 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew build
 
-    - name: Generate JaCoCo Badge
+    - name: Generate JaCoCo Badge for gateway
       uses: cicirello/jacoco-badge-generator@v2
       with:
-        jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
+        jacoco-csv-file: gateway/build/reports/jacoco/test/jacocoTestReport.csv
+        badge-file: jacoco-gateway.svg
 
