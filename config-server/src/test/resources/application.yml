@@ -9,8 +9,9 @@ spring:
         git:
           uri: git@github.com:mjd507/spring-cloud-unknown.git
           search-paths: config
+          skipSslValidation: true
           refresh-rate: -1  # do not auto refresh（no git remote pull）
-          clone-on-start: true
+          clone-on-start: false
 
 logging:
   level:
