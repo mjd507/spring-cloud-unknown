@@ -1,0 +1,17 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:mjd507/spring-cloud-unknown.git
+          search-paths: config
+          refresh-rate: -1  # do not auto refresh（no git remote pull）
+          clone-on-start: true
+
+logging:
+  level:
+    org.springframework.cloud.config.server: DEBUG
