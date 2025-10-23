@@ -43,3 +43,8 @@ jobs:
       with:
         jacoco-csv-file: gateway/build/reports/jacoco/test/jacocoTestReport.csv
 
+    - name: Generate JaCoCo Badge for config-server
+      uses: cicirello/jacoco-badge-generator@v2
+      with:
+        jacoco-csv-file: config-server/build/reports/jacoco/test/jacocoTestReport.csv
+
