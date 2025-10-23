@@ -1,0 +1,14 @@
+server:
+  port: 9088
+
+spring:
+  config:
+    import: optional:configserver:http://localhost:9090
+  cloud:
+    config:
+      name: application,db,mq
+      fail-fast: true
+
+logging:
+  level:
+    org.springframework.cloud.config.client: DEBUG
