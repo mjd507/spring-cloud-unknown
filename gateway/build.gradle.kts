@@ -1,4 +1,4 @@
 dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-gateway-server-webmvc")
-    testImplementation("org.wiremock.integrations:wiremock-spring-boot:4.2.0")
+    testImplementation("org.wiremock.integrations:wiremock-spring-boot:4.2.1")
 }
