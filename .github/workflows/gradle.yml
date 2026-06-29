@@ -8,6 +8,6 @@ on:
 
 jobs:
   build:
-    uses: Jiandong-Labs/github-workflow/.github/workflows/gradle.yml@main
+    uses: Jiandong-Labs/github-workflow/.github/workflows/gradle.yml@v1.0.0
     secrets:
       GRADLE_CACHE_ENCRYPTION_KEY: ${{ secrets.GRADLE_CACHE_ENCRYPTION_KEY }}
